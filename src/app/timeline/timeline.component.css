@@ -1,0 +1,26 @@
+pre{
+    color:white;
+}
+/* .navbar{
+    background-color:rgb(33, 83, 148);
+} */
+span{
+    color:red;
+}
+
+input{
+    border-radius:20px;
+    border:1px soild black;
+}
+.dropdown{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+.table-bordered 
+    th,
+    td {
+      border: 1px solid white;
+    }
+  

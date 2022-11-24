@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("https://wallpapercave.com/wp/wp4128804.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* height: 100vh; */
+    width: 100%;
+    overflow: auto;
+   
+    
+}

@@ -1,0 +1,43 @@
+
+.main{
+    background-color: rgb(233, 74, 69);
+    text-align: end;
+    display:flex;
+    justify-content: end;
+ }
+ .main h5{
+    text-align: end;
+ }
+ input{
+     border-radius:20px;
+     border:none;
+ }
+ h3{
+     color:white;
+     font-size: 33px;
+ }
+ .circle{
+     background-color:rgb(245, 113, 80);
+     border-radius: 50%;
+     width:100px;
+     height: 100px;
+     margin:auto;
+     cursor: pointer;
+ }
+ p{
+     text-align: center;
+     color:white;
+ }
+ .icon{
+     color:white; 
+     padding: 25px;  
+ }
+ .card{
+     background-color: rgb(227, 230, 230);
+     cursor: pointer;
+ }
+ .card img{
+     width:60px;
+     height:60px;
+ }
+ 

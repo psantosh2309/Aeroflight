@@ -1,0 +1,188 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <pre><i class="fa-solid fa-cloud fa-2x"></i> InFlyHealth > Live Monitoring </pre>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <a class="navbar-brand" routerLink="/aero-flot">
+          <i class="fa-solid fa-arrow-right-from-bracket fa-1x"></i>
+        </a>
+      </form>
+    </div>
+ </nav>
+
+ <div class="container-fluid bg-secondary">
+  <div class="header">
+    <div class="row">
+      <div class="col-sm">
+        <div class="dropdown">
+          <button class="btn btn1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-jet-fighter-up m-2"> </i><strong>A7-AMJ</strong>
+          </button>
+          </div>
+         </div>
+        </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <button type="button" class="btn btn-outline-info" routerLink="/overview">Overview</button>
+              <button type="button" class="btn btn-outline-info" routerLink="/live">Live Monetoring</button>
+              <button type="button" class="btn btn-outline-info" routerLink="/timeline">Timeline</button>
+              <button type="button" class="btn btn-outline-info active text-light">Flights</button>
+              <button type="button" class="btn btn-outline-info" routerLink="/events">Events</button>
+           </div>
+          </div>
+        </div>
+      </div>
+      <br>
+  </div> <!--Header-->
+  </div>
+
+  <br>
+  <div class="container d-flex justify-content-between">
+    <strong><div class="t1 text-dark"><i class="fa-solid fa-rotate text-light m-2"></i>Updated at 11.35 IST</div></strong>
+    <strong><div class="t2 text-dark"><i class="fa-solid fa-calendar-days text-light m-2"></i>June 11-June 15(UTC)</div></strong>
+  </div>
+  <br>
+  <div class="container">
+    <h6 class="h text-light">FLIGHT TYPE</h6>
+    <br>
+    <div class="inp">
+      <input  type="text" placeholder="(AII)" class="inpt p-1">
+      <button class="btn btn-primary ms-3">Apply</button>
+  </div>
+  </div>
+  <div class="container-fluid">
+  <div class=" mt-3">         
+    <table class="table table-hover text-light">
+      <thead class="t text-light">
+        <tr>
+          <th>FLIGHT#</th>
+          <th>ORIGIN</th>
+          <th>DESTINATION</th>
+          <th>FLIGHT TYPE</th>
+          <th>DEPARTURE TIME(UTC)</th>
+          <th>ARRIVAL TIME(UTC)</th>
+          <th>DARK FLIGHT</th>
+          <th>BAD FLIGHT</th>
+          <th>DURATION >10K</th>
+          <th>SATCOM AVAILABILITY<br>%</th>
+          <th>PAX SERVICE AVAILABILITY<br>%</th>
+          <th>AVAERAGE SNR(DBS)</th>
+          <th>MAX MOBILES/PED<br>REGISTERED</th>
+          <th>MAX ACTIVE USERS</th>
+          <th>MAX SSID CONNECTIONS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="t text-info">QTR549</td>
+          <td>ATQ</td>
+          <td>DOH</td>
+          <td>International</td>
+          <td class="t text-center">06/14/2022<br>17:14</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+        <tr>
+          <td class="t text-info">QTR548</td>
+          <td>DOH</td>
+          <td>ATQ</td>
+          <td>International</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+        <tr>
+          <td class="t text-info">QTR5242</td>
+          <td>SAW</td>
+          <td>DOH</td>
+          <td>International</td>
+          <td class="t text-center">06/14/2022<br>20:14</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+        <tr>
+          <td class="t text-info">QTR241</td>
+          <td>DOH</td>
+          <td>SAW</td>
+          <td>International</td>
+          <td class="t text-center">06/14/2022<br>23:14</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+        <tr>
+          <td class="t text-info">QTR631</td>
+          <td>SKT</td>
+          <td>DOH</td>
+          <td>International</td>
+          <td class="t text-center">06/15/2022<br>12:12</td>
+          <td class="t text-center">06/15/2022<br>22:14</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+        <tr>
+          <td class="t text-info">QTR266</td>
+          <td>LCA</td>
+          <td>DOH</td>
+          <td>International</td>
+          <td class="t text-center">06/14/2022<br>22:14</td>
+          <td class="t text-center">06/14/2022<br>10:24</td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td><button class="btn btn-secondary">N/A</button></td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+          <td class="t text-light">--</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>

@@ -1,0 +1,554 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Aero Flot",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Aeroflot.svg",
+      "code": "SU",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "A7AHL",
+          "flightid": "UAE38",
+          "arrival": "HYD",
+          "departure": "CHE",
+          "messagetime": "60347",
+          "feet": "33",
+          "landinghrs": "05",
+          "operational": true,
+          "nonoperational": false,
+          "degret": false,
+          "unknown": true,
+          "status": "operational",
+          "Currentloc": {
+            "lat": 13.08268,
+            "lng": 80.270721
+          },
+          "markers": [
+            {
+              "lat": 13.08268,
+              "lng": 80.270721,
+              "label": "Chennai"
+            },
+            {
+              "lat": 17.385044,
+              "lng": 78.486671,
+              "label": "Hyderabad"
+            }
+          ],
+          "driversList": [
+            {
+              "lat": 13.33227,
+              "lng": 80.198929,
+              "label": "ponneri"
+            },
+            {
+              "lat": 14.146319,
+              "lng": 79.850388,
+              "label": "v"
+            },
+            {
+              "lat": 17.385044,
+              "lng": 78.486671,
+              "label": "Hyderabad"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "flightname": "A7AXU",
+          "flightid": "UTE36",
+          "arrival": "BNG",
+          "departure": "CHE",
+          "messagetime": "34",
+          "feet": "221",
+          "landinghrs": "01",
+          "operational": true,
+          "nonoperational": false,
+          "degret": true,
+          "unknown": false,
+          "status": "degret",
+          "Currentloc": {
+            "lat": 13.08268,
+            "lng": 80.270721
+          },
+          "markers": [
+            {
+              "lat": 13.08268,
+              "lng": 80.270721,
+              "label": "Chennai"
+            },
+            {
+              "lat": 12.971599,
+              "lng": 77.594566,
+              "label": "Banglore"
+            }
+          ],
+          "driversList": [
+            {
+              "lat": 12.971599,
+              "lng": 77.594566,
+              "label": "Banglore"
+            },
+            {
+              "lat": 13.08268,
+              "lng": 80.270721,
+              "label": "Chennai"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "flightname": "AM1",
+          "flightid": "AMX1",
+          "arrival": "DEL",
+          "departure": "CHE",
+          "messagetime": "47",
+          "feet": "13232",
+          "landinghrs": "15",
+          "operational": true,
+          "nonoperational": false,
+          "degret": true,
+          "unknown": true,
+          "status": "degret",
+          "Currentloc": {
+            "lat": 13.08268,
+            "lng": 80.270721
+          },
+          "markers": [
+            {
+              "lat": 13.08268,
+              "lng": 80.270721,
+              "label": "Chennai"
+            },
+            {
+              "lat": 28.70406,
+              "lng": 77.102493,
+              "label": "Delhi"
+            }
+          ],
+          "driversList": [
+            {
+              "lat": 13.08268,
+              "lng": 80.270721,
+              "label": "Chennai"
+            },
+            {
+              "lat": 28.70406,
+              "lng": 77.102493,
+              "label": "Delhi"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "flightname": "AC1",
+          "flightid": "ACA1",
+          "arrival": "DEL",
+          "departure": "BAN",
+          "messagetime": "4",
+          "feet": "10234",
+          "landinghrs": "04",
+          "operational": false,
+          "nonoperational": false,
+          "degret": false,
+          "unknown": true,
+          "status": "unknown",
+          "Currentloc": {
+            "lat": 12.971599,
+            "lng": 77.594566
+          },
+          "markers": [
+            {
+              "lat": 12.971599,
+              "lng": 77.594566,
+              "label": "Banglore"
+            },
+            {
+              "lat": 28.70406,
+              "lng": 77.102493,
+              "label": "Delhi"
+            }
+          ],
+          "driversList": [
+            {
+              "lat": 12.971599,
+              "lng ": 77.594566,
+              "label": "Banglore"
+            },
+            {
+              "lat": 28.70406,
+              "lng": 77.102493,
+              "label": "Delhi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Air Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/AirAsia_New_Logo.svg",
+      "code": "AXM",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "D71",
+          "flightid": "XAX1",
+          "arrival": "KOL",
+          "departure": "KAN",
+          "messagetime": "2",
+          "feet": "3",
+          "landinghrs": "00",
+          "operational": false,
+          "nonoperational": false,
+          "degret": false,
+          "unknown": false,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Air Canada",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Air_Canada_Logo.svg",
+      "code": "ACA",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "NH1",
+          "flightid": "ANA1",
+          "arrival": "WAS",
+          "departure": "TOK",
+          "messagetime": "347",
+          "feet": "313",
+          "landinghrs": "15",
+          "operational": false,
+          "nonoperational": true,
+          "degret": false,
+          "unknown": true,
+          "status": "degret"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Air Bus",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Air_Caraibes_2019_logo.svg",
+      "code": "ARB",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "AS1",
+          "flightid": "ASA1",
+          "arrival": "WDC",
+          "departure": "SAT",
+          "messagetime": "234",
+          "feet": "21",
+          "landinghrs": "12",
+          "operational": true,
+          "nonoperational": true,
+          "degret": false,
+          "unknown": false,
+          "status": "nonoperational"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Air China",
+      "image": "https://logodownload.org/wp-content/uploads/2020/03/air-china-logo-0.png",
+      "code": "CCA",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "A7AHL",
+          "flightid": "UAE38",
+          "arrival": "DFW",
+          "departure": "LAX",
+          "messagetime": "60347",
+          "feet": "33",
+          "landinghrs": "05",
+          "operational": false,
+          "nonoperational": true,
+          "degret": true,
+          "unknown": false,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Air France",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Finnair_Logo.svg",
+      "code": "AFR",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "A7AHL",
+          "flightid": "UAE38",
+          "arrival": "DFW",
+          "departure": "LAX",
+          "messagetime": "60347",
+          "feet": "33",
+          "landinghrs": "05",
+          "operational": true,
+          "nonoperational": false,
+          "degret": true,
+          "unknown": true,
+          "status": "operational"
+        },
+        {
+          "id": 2,
+          "flightname": "A7AXU",
+          "flightid": "UTE36",
+          "arrival": "DAL",
+          "departure": "HAL",
+          "messagetime": "34",
+          "feet": "221",
+          "landinghrs": "01",
+          "operational": true,
+          "nonoperational": false,
+          "degret": true,
+          "unknown": true,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Air India",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Air_India.svg",
+      "code": "AIC"
+    },
+    {
+      "id": 8,
+      "name": "Air Deccan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Air_Canada_Logo.svg",
+      "code": "MAU",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "AM1",
+          "flightid": "AMX1",
+          "arrival": "MEX",
+          "departure": "MAD",
+          "messagetime": "47",
+          "feet": "13232",
+          "landinghrs": "15",
+          "operational": true,
+          "nonoperational": false,
+          "degret": false,
+          "unknown": true,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Jet Blue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3c/JetBlue_Airways_Logo.svg",
+      "code": "AAL",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "A7AHL",
+          "flightid": "UAE38",
+          "arrival": "DFW",
+          "departure": "LAX",
+          "messagetime": "60347",
+          "feet": "33",
+          "landinghrs": "05",
+          "operational": true,
+          "nonoperational": false,
+          "degret": false,
+          "unknown": true,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Finnair",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Finnair_Logo.svg",
+      "code": "FNR"
+    },
+    {
+      "id": 11,
+      "name": "EVA Air",
+      "image": "https://logodownload.org/wp-content/uploads/2020/03/eva-air-logo-0.png",
+      "code": "EVA",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "A7AHL",
+          "flightid": "UAE38",
+          "arrival": "DFW",
+          "departure": "LAX",
+          "messagetime": "60347",
+          "feet": "33",
+          "landinghrs": "05",
+          "operational": false,
+          "nonoperational": true,
+          "degret": true,
+          "unknown": true,
+          "status": "operational"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Lufthansa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Lufthansa_Logo_2018.svg",
+      "code": "LFA",
+      "flightdata": [
+        {
+          "id": 1,
+          "flightname": "D71",
+          "flightid": "XAX1",
+          "arrival": "KOL",
+          "departure": "KAN",
+          "messagetime": "2",
+          "feet": "3",
+          "landinghrs": "00",
+          "operational": true,
+          "nonoperational": true,
+          "degret": true,
+          "unknown": true,
+          "status": "operational"
+        }
+      ]
+    }
+  ],
+  "signupUsers": [
+    {
+      "id": 1,
+      "username": "SantoshKumar",
+      "email": "ps@gmail.com",
+      "pwd": 12345678,
+      "mobile": 1234567890
+    },
+    {
+      "username": "kumar",
+      "email": "k@gmail.com",
+      "pwd": "12345678",
+      "mobile": "1234123412",
+      "id": 3
+    },
+    {
+      "username": "san",
+      "email": "S@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 16
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 17
+    },
+    {
+      "username": "kumar",
+      "email": "k@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 18
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 19
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 20
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234567890",
+      "id": 21
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "12345",
+      "mobile": "1234567890",
+      "id": 22
+    },
+    {
+      "username": "san",
+      "email": "asa",
+      "pwd": "1234",
+      "mobile": "124",
+      "id": 23
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "12345",
+      "mobile": "1234567890",
+      "id": 24
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "Ps@gmail.com",
+      "pwd": "12345",
+      "mobile": "1234567890",
+      "id": 25
+    },
+    {
+      "username": "kumar",
+      "email": "k@gmail.com",
+      "pwd": "1234",
+      "mobile": "1234123412",
+      "id": 26
+    },
+    {
+      "username": "Kalyani",
+      "email": "k@gmail.com",
+      "pwd": "12345",
+      "mobile": "9876543210",
+      "id": 27
+    },
+    {
+      "username": "Kalyani B",
+      "email": "k@gmail.com",
+      "pwd": "12345",
+      "mobile": "9876543210",
+      "id": 28
+    },
+    {
+      "username": "Santosh kumar",
+      "email": "psantosh2309@gmail.com",
+      "pwd": "Santu1234@",
+      "mobile": "8897174917",
+      "id": 29
+    },
+    {
+      "username": "Kalyani",
+      "email": "kalyani@gmail.com",
+      "pwd": "Santosh@1234",
+      "mobile": "8897174917",
+      "id": 30
+    },
+    {
+      "username": "Dev",
+      "email": "dev@gmail.com",
+      "pwd": "Santosh@1234",
+      "mobile": "8897174917",
+      "id": 31
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

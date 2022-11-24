@@ -1,0 +1,32 @@
+pre{
+    color:white;
+}
+/* .navbar{
+    background-color:rgb(33, 83, 148);
+} */
+ /* .header{
+    background-color:rgb(100, 105, 105);
+    height:120px;
+    width:100%;
+} */
+span{
+    color:red;
+}
+
+input{
+    border-radius:20px;
+    border:1px soild black;
+}
+.dropdown{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+table th{
+    font-size: 14px;
+}
+table tr td ul li{
+    font-size: 40px;
+    
+}

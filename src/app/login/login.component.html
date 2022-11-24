@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-4 offset-sm-4">
+      <div class="container mt-5 p-3 main">
+        <h2>Login</h2>
+        <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+          <div class="form-group mb-3 mt-3">
+            <label>Username:</label>
+            <input type="text" class="form-control" formControlName="username"
+                placeholder="Enter username" name="username" required>
+                <span class="text-danger" *ngIf="myform.controls['username'].dirty && myform.hasError('required','username')">Username is required</span>
+          </div>
+          <div class="form-group mb-3">
+            <label>Email:</label>
+            <input type="email" class="form-control" formControlName="email"
+                placeholder="Enter EmailId" name="email" required>
+                <span class="text-danger" *ngIf="myform.controls['email'].dirty && myform.hasError('required','email')">Email is required</span>
+          </div>
+          <div class="form-group mb-3">
+            <label>Password:</label>
+            <input type="password" class="form-control" formControlName="pwd"
+                placeholder="Enter password" name="pwd" required>
+                <span class="text-danger" *ngIf="myform.controls['pwd'].dirty && myform.hasError('required','pwd')">Password is required</span>
+          </div>
+           <button type="submit" [disabled]="!myform.valid" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    </div>
+    

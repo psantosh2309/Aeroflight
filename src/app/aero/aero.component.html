@@ -1,0 +1,109 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/dashboard">
+      <i class="fa-solid fa-house-chimney fa-1x"></i>
+    </a>
+  </div>
+</nav>
+
+<!-- Data-->
+<div class="container mt-4">
+    <div class="row rounded-3">
+        <div class="col-6 main rounded-3">
+            <h5>ON GROUND({{count}})</h5>
+            <div *ngFor="let data of resdata" >
+                <div class="row px-4">
+                  <div [ngClass]="{'optclr':data.status=='operational','nonoptclr':data.status=='nonoperational','degretclr':data.status=='degret','unknownclr':data.status=='unknown'}" 
+                  class="col-1 wid border border-dark" style="overflow: hidden;" placement="end" 
+                     [ngbTooltip]="tipContent">
+                     <section>
+                        <ng-template #tipContent >
+                          <div class="text-start" *ngIf="data.operational || data.nonoperational || data.degret || data.unknown">
+                              <div>
+                                <div *ngIf="data.operational"> <i class="fa-solid fa-circle button1"></i>&#160;&#160;&#160;Operational</div>
+                              </div>
+                                  <div>
+                                    <div *ngIf="data.nonoperational"><i class="fa-solid fa-circle button2"></i>&#160;&#160;&#160;Non Operational</div>
+                                  </div>
+                                  <div>
+                                    <div *ngIf="data.degret"><i class="fa-solid fa-circle button3"></i>&#160;&#160;&#160;Degret</div>
+                                  </div>
+                                <div>
+                              <div *ngIf="data.unknown"><i class="fa-solid fa-circle button4"></i>&#160;&#160;&#160;Unknown</div>
+                            </div>
+                          </div>
+                        </ng-template>
+                      </section>
+                   </div>
+                  <div class="col-11 bg-white" (mouseover)="addClickEvent($event,data.id)" data-bs-toggle="modal" data-bs-target="#myModal" >
+                    <div class="row text-center">
+                      <div class="col-sm-5 border border-dark"><h4>{{data.flightid}}</h4></div>
+                       <div class="col-sm-2 border border-dark">{{data.flightname}}</div>
+                        <div class="col-sm-5 width border border-dark">
+                         <strong>{{data.departure}}</strong>
+                         <i class="fa-solid fa-plane"></i>
+                         <strong>{{data.arrival}}</strong>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6 border  border-dark"><small>Last Message: {{data.messagetime}} minutes ago </small></div>
+                      <div class="col-sm-2 border  border-dark"><small>{{data.feet}} feet</small></div>
+                      <div class="col-sm-4 widt border  border-dark"><small> Landing in {{data.landinghrs}}hh 00m 00s </small></div>
+                    </div>
+                  </div>
+                </div><br>
+           </div>
+        </div>
+
+
+    <!-- <div *ngIf="showMap" class="col-sm-6">
+      <agm-map  [latitude]='lat' [longitude]='lng' [zoom]="zoom">
+           <agm-overlay 
+           [latitude]="dummyItems.lat" [longitude]="dummyItems.lng">
+                <div><i class="plane fa-solid fa-plane fa-3x"></i></div>
+           </agm-overlay>
+
+           <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.lng">
+                 <agm-info-window #infoWindow>
+                  {{ marker.label }}
+                 </agm-info-window> 
+           </agm-marker>
+
+           <agm-polyline [editable]="false">
+             <agm-polyline-point *ngFor= "let marker of markers" [latitude]="marker.lat"
+                    [longitude]="marker.lng">
+             </agm-polyline-point>
+           </agm-polyline>
+      </agm-map>
+    </div> -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <agm-map  [latitude]='lat' [longitude]='lng' [zoom]="zoom">
+              <agm-overlay 
+              [latitude]="dummyItems.lat" [longitude]="dummyItems.lng">
+                   <div><i class="plane fa-solid fa-plane fa-3x"></i></div>
+              </agm-overlay>
+   
+              <agm-marker *ngFor="let marker of markers" [latitude]="marker.lat" [longitude]="marker.lng">
+                    <agm-info-window #infoWindow>
+                     {{marker.label }}
+                    </agm-info-window> 
+              </agm-marker>
+   
+              <agm-polyline [editable]="false">
+                <agm-polyline-point *ngFor= "let marker of markers" [latitude]="marker.lat"
+                       [longitude]="marker.lng">
+                </agm-polyline-point>
+              </agm-polyline>
+         </agm-map>
+        
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>

@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+  <div class="container">
+    <a class="navbar-brand">Aero</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <a class="navbar-brand" routerLink="/signup">
+          <i class="fa-solid fa-arrow-right-from-bracket fa-1x"></i>
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!-- <div class="main d-flex justify-content-center p-1">
+        <input type="search" placeholder="Search Airlines & Trails">
+    </div> -->
+    
+<hr>
+<div class="container">
+<h3>Welcome, Patnana Santosh Kumar!</h3>
+</div>
+<hr>
+<div class="container pt-3">
+      <div class="row">
+                <div class="col-sm-3 text-center justify-content-center">
+                    <div class="circle" (click)="clickTag()">
+                        <div class="icon">
+                          <i class="fa-solid fa-plane fa-3x"></i>
+                        </div>
+                    </div>
+                    <p>Flight</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="circle" (click)="clickTag1()">
+                      <div class="icon">
+                        <i class="fa-solid fa-globe fa-3x"></i>
+                      </div>
+                    </div>
+                    <p>Live Monetoring</p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="circle" (click)="clickTag1()">
+                    <div class="icon">
+                      <i class="fa-solid fa-screwdriver-wrench fa-3x"></i>
+                    </div>
+                    </div>
+                    <p>Repair Management</p>
+                </div>
+                <div class="col-sm-3">
+                      <div class="circle" (click)="clickTag1()">
+                        <div class="icon">
+                          <i class="fa-solid fa-user fa-3x"></i>
+                        </div>
+                      </div>
+                      <p>Profile</p>
+                </div>
+       </div>
+</div>   
+<br>
+
+<hr>
+<div class="container" *ngIf="condition">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let card of cardData">
+      <div class="card" routerLink="/aero-flot"(click)="onClick(card.id)">
+            <div class="row">
+              <div class="col-sm">
+                <div class="text-center"><img src="{{card.image}}"></div>
+              </div>
+              <div class="col-sm text-center">
+                <div >{{card.name}}</div>
+                <div>{{card.code}}</div>
+              </div>
+           </div>
+        </div>
+      <br>
+    </div>
+  </div>
+</div>
+

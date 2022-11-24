@@ -1,0 +1,70 @@
+table{
+    width:100%;
+    text-align: center;
+    
+}
+table tr td{
+    border:1px solid rgb(82, 148, 247);
+    border-radius: 10px;  
+}
+  .main{
+    background-color: rgb(218, 215, 212); 
+}  
+.button1{
+    color: green;
+}
+.button2{
+    color:lightgreen;
+}
+.button3{
+    color:red;
+}
+.button4{
+    color:orangered;
+}
+.optclr{
+    background-color: rgb(118, 255, 118);
+}
+.nonoptclr{
+    background-color: rgb(238, 155, 155);
+}
+.degretclr{
+    background-color: rgb(252, 211, 136);
+}
+.unknownclr{
+    background-color: #f8f834;
+}
+
+.wid{
+    width: 0px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.widt{
+    border-radius: 0 0 5px 0;
+}
+
+.width{
+    border-radius: 0 5px 0 0;
+}
+
+@media only screen and (max-width:425px){
+    .wid{
+        width:92%;
+        height: 20px;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .widt{
+        border-radius: 0 0 5px 5px;
+    }
+
+    .width{
+        border-radius: 0 0 0 0;
+    }
+}
+agm-map {
+    height: 600px;
+  }
+  
+  

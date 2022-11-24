@@ -1,0 +1,188 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+    <pre><i class="fa-solid fa-cloud fa-2x"></i> InFlyHealth > Live Monitoring </pre>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <a class="navbar-brand" routerLink="/overview">
+          <i class="fa-solid fa-arrow-right-from-bracket fa-1x"></i>
+        </a>
+      </form>
+    </div>
+ </nav>
+ <div class="container-fluid bg-secondary">
+    <div class="header">
+      <div class="row">
+        <div class="col-sm">
+          <div class="dropdown">
+            <button class="btn btn1" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-jet-fighter-up m-2"> </i><strong>A7-AMJ</strong>
+            </button>
+            </div>
+           </div>
+          </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="d-flex justify-content-center">
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-info" routerLink="/overview">Overview</button>
+                <button type="button" class="btn btn-outline-info active text-light">Live Monetoring</button>
+                <button type="button" class="btn btn-outline-info" routerLink="/timeline">Timeline</button>
+                <button type="button" class="btn btn-outline-info" routerLink="/flights">Flights</button>
+                <button type="button" class="btn btn-outline-info" routerLink="/events">Events</button>
+             </div>
+            </div>
+          </div>
+        </div>
+        <br>
+    </div> <!--Header-->
+    </div>
+
+    <br>
+    <div class="container d-flex justify-content-between">
+      <strong><div class="t1 text-dark"><i class="fa-solid fa-rotate text-light m-2"></i>Updated at 11.35 IST</div></strong>
+      <strong><div class="t2 text-dark"><i class="fa-solid fa-calendar-days text-light m-2"></i>June 11-June 15(UTC)</div></strong>
+    </div>
+    <br>
+    <div class="container">
+      <h6>KEY METRICS</h6>
+    </div>
+    <br>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+         <h6 class="h text-light">IFE STATUSES</h6>
+         <hr>
+         <div class="col-sm-2">
+         <div class="card bg-secondary" style="width: 16rem;">
+            <div class="card-body">
+              <div class="row">
+                <div class="col">
+                <i class="fa-solid fa-rectangle-list fa-2x"></i>
+                </div>
+                <div class="col">
+                 Head-End
+                <p id="p">No issue</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <br>
+          <h6 class="h text-light">STREAMING SESSIONS</h6>
+          
+            <hr>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card bg-secondary" style="width: 10rem;">
+                        <div class="card-body">
+                          DSU1 <br>
+                          2/124
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card bg-secondary" style="width: 10rem;">
+                        <div class="card-body">
+                          DSU2 <br>
+                          01/125
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-6">
+        <h6 class="h text-light">FLIGHT INFORMATION</h6>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <p>FLIGHT#</p>
+          </div>
+          <div class="col">
+            <p>ORIGIN</p>
+          </div>
+          <div class="col">
+            <p>DESTINATION</p>
+          </div>
+          <div class="col">
+            <p>ALTITUDE</p>
+          </div>
+          <div class="col">
+            <p>TIME TO DESTINATION</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-info">
+            <p>THS1007</p>
+          </div>
+          <div class="col text-info">
+            <p>MLB</p>
+          </div>
+          <div class="col text-info">
+            <p>ATL</p>
+          </div>
+          <div class="col text-info">
+            <p>33 feet</p>
+          </div>
+          <div class="col text-info">
+            <p>00h 00m 00s</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>DEPARTURE TIME(UTC)</p>
+          </div>
+          <div class="col">
+            <p>SCHEDULED ARRIVAL TIME (UTC)</p>
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col text-info">
+            <p>11/08/2021 05:35</p>
+          </div>
+          <div class="col text-info">
+            <p>11/08/2021 09:18</p>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col text-light">Beams Display:</div>
+            <div class="col text-light"><input type="radio" class="i me-1">None</div>
+            <div class="col text-light"><input type="radio" class="i me-1">SES</div>
+          </div>
+
+          <!-- <div class="col-sm-6">
+      <agm-map  [latitude]='lat' [longitude]='lng' [zoom]="zoom">
+           <agm-overlay 
+           [latitude]="lat" [longitude]="lng">
+                <div><i class="plane fa-solid fa-plane fa-3x"></i></div>
+           </agm-overlay>
+
+           <agm-marker [latitude]="lat" [longitude]="lng">
+                 <agm-info-window #infoWindow>
+                  {{ marker.label }}
+                 </agm-info-window> 
+           </agm-marker>
+
+           <agm-polyline [editable]="false">
+             <agm-polyline-point  [latitude]="lat"
+                    [longitude]="lng">
+             </agm-polyline-point>
+           </agm-polyline>
+      </agm-map>
+    </div> -->
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+       
+    </div>
+    </div>

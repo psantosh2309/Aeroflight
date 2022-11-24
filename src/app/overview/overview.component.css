@@ -1,0 +1,54 @@
+pre{
+    color:white;
+}
+/* .navbar{
+    background-color:rgb(33, 83, 148);
+} */
+span{
+    color:red;
+}
+
+input{
+    border-radius:20px;
+    border:1px soild black;
+}
+.dropdown{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-bottom:10px; 
+}
+.btn1{
+    color:rgb(243, 233, 233);
+}
+
+/* p{
+    color:rgb(252, 246, 246);
+} */
+.card{
+    border:none;
+}
+.card-header{
+    background-color:rgb(157, 163, 163); 
+}
+h6{
+    color: white;
+}
+.circle{
+    background-color:rgb(104, 102, 101);
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+    margin:auto;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    color:white;
+}
+.icon{
+    color:white; 
+    padding: 25px;  
+}
+
+
